@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+body{
+    background-color: #fafafa;
+}
+
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.image{
+    display: flex;
+    height: 700px;
+    width: 500px;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.login{
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    border-radius: 15px;
+    width: 400px;
+    height: 450px;
+}
+.logo{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    margin-top: 15px;
+    cursor: pointer;
+}
+.form{
+    text-align: center;
+}
+label{
+    width: 20px;
+    height: 20px;
+}
+input{
+    height: 40px;
+    width: 300px;
+    border-radius: 3px;
+    background-color: rgb(253, 253, 253);
+    margin-top: 5px;
+    font-size: 15px;
+    padding-left: 10px;
+    
+}
+.submit{
+    margin-top: 8px;
+}
+
+.submit input{
+    background-color: rgb(142, 187, 230);
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    transition: all .5;
+}
+
+.submit input:hover{
+    transition: all .5s;
+    cursor: pointer;
+    background-color: rgb(46, 102, 255);
+}
+
+.options{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.line{
+    border-top: 1px solid #dbdbdb;
+    width: 268px;
+    margin: 25px auto 35px;
+}
+
+.options .ou{
+    position: relative;
+    text-transform: uppercase;
+    color: #bbb;
+    top: -10px;
+    background-color: #fafafa;
+    width: 30px;
+
+}
+
+a{
+    text-decoration: none;
+    margin-top: 30px;
+}
+
+.options img{
+    width: 50px;
+    height: 23px;
+}
+.facebook{
+    margin-top: 20px;
+    text-align: start;
+    margin-left: 70px;
+}
+
+.cadastre{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid rgba(0, 0, 0, 0.397);
+    border-radius: 15px;
+    margin-top: 15px;
+    width: 400px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.app{
+    text-align: center;
+    
+}
+.app p{
+    margin-bottom: 15px;
+}
+
+.img-app{
+    display: flex;
+    width: 400px;
+    height: 59px;
+    cursor: pointer;
+}
+
+.rodape{
+    margin-top: 50px;
+    opacity: .5;
+}
+
+
+.rodape ul{
+    display: flex;
+    justify-content: center;
+}
+.rodape li{ 
+    display: flex;
+    margin: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.rodape h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+/* Mobile */
+
+@media(max-width: 450px){
+
+    body{
+        background-color: white;
+        margin: 10px;
+    }
+
+    .image{
+        display: none;
+    }
+
+    .container,
+    .form{
+        margin-top: 0;
+    }
+
+    .logo{
+        display: flex;
+        margin-top: 20px;
+        left: 20px;
+    }
+    .login{
+        height: 450px; 
+    }
+
+    .login,
+    .cadastre{
+    border: none;
+    }
+
+    .form{
+        margin-top: 20px;
+    }
+    .options .ou{
+        text-transform: uppercase;
+        color: #bbb;
+        background-color: #fafafa;
+        height: 40px;
+        width: 40px;
+    }
+
+    .rodape ul{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .rodape li{
+        width: 50px0px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+    /* Landscape Mobile */
+
+    @media(max-width: 900px){
+
+        body{
+            background-color: white;
+            margin: 10px;
+            
+        }
+    
+        .image{
+            display: none;
+        }
+    
+        .container,
+        .form{
+            margin-top: 0;
+        }
+
+        .logo{
+            display: flex;
+            height: 60px;
+            margin-top: 20px;
+            padding: 0px;
+        }
+        .options .ou{
+            text-transform: uppercase;
+            color: #bbb;
+            background-color: #fafafa;
+            height: 40px;
+            width: 40px;
+        }
+    }
